@@ -1,0 +1,233 @@
+
+.present {
+  $this: &;
+  @include full-width(flex);
+
+  align-items: center;
+  max-width: $siteWrapperWidth;
+  height: 0;
+  margin: 0 auto;
+  background: rgba(255, 0, 0, 0.1);
+  position: fixed;
+  left: 1%;
+  right: 1%;
+  top: 50%;
+  z-index: 1000;
+
+  &__button {
+    display: block;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    left: -114px;
+    z-index: 1;
+
+    &:before {
+      @include full-wh(block);
+
+      content: '';
+      background: linear-gradient(45deg, $secondary, $blue 130%);
+      border-radius: 100%;
+      transform: scale(1);
+      animation: 10s PresentButtonShadowAnimate 0s ease-out infinite;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    &:after {
+      @include full-wh(block);
+
+      content: '';
+      background: linear-gradient(45deg, $secondary, $blue 130%);
+      border-radius: 100%;
+      transform: scale(1);
+      transition: 0.8s;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    &--active {
+      cursor: default;
+
+      &:before {
+        animation: none;
+      }
+
+      &:after {
+        transform: scale(100);
+      }
+
+      #{$this} {
+        &__box {
+          img {
+            animation: 0.2s PresentButtonActiveAnimate 0s ease-out both;
+          }
+        }
+      }
+    }
+
+    &--disactive {
+      #{$this} {
+        &__box {
+          img {
+            animation: 0.4s PresentButtonDisactiveAnimate 0s ease-out both;
+          }
+        }
+      }
+    }
+  }
+
+  &__box {
+    display: block;
+    width: 73px;
+    height: 73px;
+    background: linear-gradient(45deg, $secondary, $blue 130%);
+    border-radius: 100%;
+    position: relative;
+
+    img {
+      width: 68px;
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+      transition: 0.2s;
+      animation: 10s PresentButtonAnimate 0s ease-in-out infinite;
+      position: absolute;
+      left: -7px;
+      top: -9px;
+      z-index: 2;
+    }
+  }
+
+  &__modal {
+    @include full-wh(block);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+    &:before {
+      @include full-wh(block);
+
+      content: '';
+      background: linear-gradient(45deg, $secondary, $blue 130%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+
+    }
+
+    &:after {
+      @include full-wh(block);
+
+      content: '';
+      background: {
+        image: url('../images/modal-background.png');
+        size: cover;
+        position: 0 100%;
+        repeat: no-repeat;
+      };
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+    }
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+
+      .modal {
+        &__form {
+          display: block;
+        }
+
+        &__container {
+          transform: translateX(0);
+        }
+      }
+    }
+
+    &__form {
+      &__active {
+        .form {
+          display: block
+        }
+      }
+    }
+
+    &__container {
+      @include full-wh(block);
+
+      overflow-y: auto;
+      position: relative;
+      z-index: 3;
+    }
+
+    &__wrapper {
+      $modalContainerMargin: 24px;
+      @include full-width(flex);
+
+      align-items: center;
+      min-height: calc(100% - #{$modalContainerMargin * 2});
+      margin: $modalContainerMargin 0;
+      padding: 0 24px;
+    }
+
+    &__close {
+      @include square(40px);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+      transform: rotate(0deg);
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .present {
+    max-width: 100%;
+    top: unset;
+    left: 0;
+    right: unset;
+    bottom: 60px;
+
+    &__button {
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .present {
+    &__modal {
+      &__wrapper {
+        padding: 0 16px;
+
+        .wrapper {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

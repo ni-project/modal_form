@@ -1,0 +1,53 @@
+
+.root {
+  @include full-wh(table);
+
+  table-layout: fixed;
+}
+
+.container {
+  @include full-width(block);
+
+  padding-top: $siteHeaderHeight;
+  transition: 0.3s;
+}
+
+.wrapper {
+  @include full-width(block);
+
+  max-width: $siteWrapperWidth;
+  margin: 0 auto;
+  padding: 0;
+  transition: 0.3s;
+}
+
+main ul li {
+
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    padding-top: $siteHeaderHeightTablet;;
+  }
+
+  .wrapper {
+    max-width: 100%;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding-top: $siteHeaderHeightMobile;;
+  }
+
+  .wrapper {
+    padding: 0 24px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .wrapper {
+    padding: 0 16px;
+  }
+}

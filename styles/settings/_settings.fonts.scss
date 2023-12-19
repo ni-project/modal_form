@@ -1,0 +1,49 @@
+
+@font-face {
+  font-family: 'Mulish-Medium';
+  src:
+          url('../fonts/Mulish-Medium-500.woff2') format('woff2'),
+          url('../fonts/Mulish-Medium-500.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish-SemiBold';
+  src:
+          url('../fonts/Mulish-SemiBold-600.woff2') format('woff2'),
+          url('../fonts/Mulish-SemiBold-600.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mulish-Bold';
+  src:
+          url('../fonts/Mulish-Bold-700.woff2') format('woff2'),
+          url('../fonts/Mulish-Bold-700.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$fontGlobal: 'Mulish-Medium', sans-serif;
+
+$H_color: $primary;
+
+$H1_fontSize:          34px;
+$H1_lineHeight:        44px;
+
+$H2_fontSize:          30px;
+$H2_lineHeight:        39px;
+
+$H1_fontSize_tablet:   34px;
+$H1_lineHeight_tablet: 44px;
+
+$H2_fontSize_tablet:   30px;
+$H2_lineHeight_tablet: 39px;
+
+$H1_fontSize_mobile:   18px;
+$H1_lineHeight_mobile: 25px;
+
+$H2_fontSize_mobile:   30px;
+$H2_lineHeight_mobile: 39px;

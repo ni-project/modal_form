@@ -1,0 +1,25 @@
+
+.button {
+  @include font(15px, 25px, $white, Mulish-Bold);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  min-width: 60px;
+  height: 60px;
+  padding: 0 24px;
+  background: $blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background: #0d6fff;
+  }
+}

@@ -1,0 +1,32 @@
+
+.content {
+  h2, .h2 {
+    margin: 32px 0;
+  }
+
+  ul {
+    @include full-width(grid);
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    margin: 32px 0;
+
+    li {
+      padding: 32px;
+      border: 1px solid $disable;
+      border-radius: 32px;
+
+      &:nth-child(3n) {
+        background: #F9F9FB;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    ul {
+      grid-template-columns: 1fr;
+    }
+  }
+}

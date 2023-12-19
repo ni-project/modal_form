@@ -1,0 +1,1042 @@
+@font-face {
+  font-family: 'Mulish-Medium';
+  src: url("../fonts/Mulish-Medium-500.woff2") format("woff2"), url("../fonts/Mulish-Medium-500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Mulish-SemiBold';
+  src: url("../fonts/Mulish-SemiBold-600.woff2") format("woff2"), url("../fonts/Mulish-SemiBold-600.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Mulish-Bold';
+  src: url("../fonts/Mulish-Bold-700.woff2") format("woff2"), url("../fonts/Mulish-Bold-700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+picture, img {
+  border-style: none;
+  display: block; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+* {
+  box-sizing: border-box; }
+
+.text-link {
+  color: #00ADFE; }
+
+@-webkit-keyframes PresentButtonShadowAnimate {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1); }
+  15% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(2); }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1); } }
+@keyframes PresentButtonShadowAnimate {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1); }
+  20% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(2); }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1); } }
+@-webkit-keyframes PresentButtonAnimate {
+  0% {
+    transform: rotate(0deg); }
+  19% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(20deg); }
+  22% {
+    transform: rotate(-20deg); }
+  24% {
+    transform: rotate(20deg); }
+  26% {
+    transform: rotate(-20deg); }
+  28% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes PresentButtonAnimate {
+  0% {
+    transform: rotate(0deg); }
+  19% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(20deg); }
+  22% {
+    transform: rotate(-20deg); }
+  24% {
+    transform: rotate(20deg); }
+  26% {
+    transform: rotate(-20deg); }
+  28% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+@-webkit-keyframes PresentButtonActiveAnimate {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg) scale(1); }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(0deg) scale(1.4); } }
+@keyframes PresentButtonActiveAnimate {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg) scale(1); }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(0deg) scale(1.4); } }
+@-webkit-keyframes PresentButtonDisactiveAnimate {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(0deg) scale(1.4); }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg) scale(1); } }
+@keyframes PresentButtonDisActiveAnimate {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(0deg) scale(1.4); }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg) scale(1); } }
+html {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: Mulish-Medium, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #292B33;
+  -webkit-tap-highlight-color: transparent; }
+
+header {
+  display: table-row;
+  width: 100%;
+  height: 0; }
+
+nav {
+  display: block; }
+
+main {
+  display: table-row;
+  width: 100%; }
+
+section {
+  display: block; }
+
+aside {
+  display: block; }
+
+footer {
+  display: table-row;
+  width: 100%;
+  height: 1px; }
+
+h1, .h1 {
+  font-family: Mulish-SemiBold, sans-serif;
+  font-size: 34px;
+  line-height: 44px;
+  color: #1D1E1F;
+  margin: 0;
+  transition: 0.5s; }
+
+h2, .h2 {
+  font-family: Mulish-SemiBold, sans-serif;
+  font-size: 30px;
+  line-height: 39px;
+  color: #1D1E1F;
+  margin: 0;
+  transition: 0.5s; }
+
+@media screen and (max-width: 1150px) {
+  h1, .h1 {
+    font-size: 34px;
+    line-height: 44px; }
+
+  h2, .h2 {
+    font-size: 30px;
+    line-height: 39px; } }
+@media screen and (max-width: 750px) {
+  h1, .h1 {
+    font-size: 18px;
+    line-height: 25px; }
+
+  h2, .h2 {
+    font-size: 30px;
+    line-height: 39px; } }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a:focus {
+  outline: none; }
+
+input:focus {
+  outline: none; }
+
+select:focus {
+  outline: none; }
+
+textarea:focus {
+  outline: none; }
+
+button:focus {
+  outline: none; }
+
+svg {
+  display: block; }
+
+p {
+  margin: 0; }
+
+b {
+  font-family: Mulish-Bold, sans-serif; }
+
+strong {
+  font-family: Mulish-Bold, sans-serif; }
+
+.root {
+  display: table;
+  width: 100%;
+  height: 100%;
+  table-layout: fixed; }
+
+.container {
+  display: block;
+  width: 100%;
+  padding-top: 96px;
+  transition: 0.3s; }
+
+.wrapper {
+  display: block;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  transition: 0.3s; }
+
+@media screen and (max-width: 1250px) {
+  .container {
+    padding-top: 80px; }
+
+  .wrapper {
+    max-width: 100%;
+    padding: 0 32px; } }
+@media screen and (max-width: 750px) {
+  .container {
+    padding-top: 64px; }
+
+  .wrapper {
+    padding: 0 24px; } }
+@media screen and (max-width: 350px) {
+  .wrapper {
+    padding: 0 16px; } }
+.header {
+  display: block;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 0 24px rgba(29, 30, 31, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100; }
+  .header__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    transition: 0.3s; }
+
+@media screen and (max-width: 1250px) {
+  .header__wrapper {
+    height: 80px; } }
+@media screen and (max-width: 750px) {
+  .header__wrapper {
+    height: 64px; } }
+.content h2, .content .h2 {
+  margin: 32px 0; }
+.content ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin: 32px 0; }
+  .content ul li {
+    padding: 32px;
+    border: 1px solid #ADB4C6;
+    border-radius: 32px; }
+    .content ul li:nth-child(3n) {
+      background: #F9F9FB; }
+
+@media screen and (max-width: 750px) {
+  .content ul {
+    grid-template-columns: 1fr; } }
+.present {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  max-width: 1170px;
+  height: 0;
+  margin: 0 auto;
+  background: rgba(255, 0, 0, 0.1);
+  position: fixed;
+  left: 1%;
+  right: 1%;
+  top: 50%;
+  z-index: 1000; }
+  .present__button {
+    display: block;
+    border-radius: 100%;
+    cursor: pointer;
+    position: relative;
+    left: -114px;
+    z-index: 1; }
+    .present__button:before {
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: linear-gradient(45deg, #292B33, #0C5EED 130%);
+      border-radius: 100%;
+      transform: scale(1);
+      animation: 10s PresentButtonShadowAnimate 0s ease-out infinite;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1; }
+    .present__button:after {
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: linear-gradient(45deg, #292B33, #0C5EED 130%);
+      border-radius: 100%;
+      transform: scale(1);
+      transition: 0.8s;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1; }
+    .present__button--active {
+      cursor: default; }
+      .present__button--active:before {
+        animation: none; }
+      .present__button--active:after {
+        transform: scale(100); }
+      .present__button--active .present__box img {
+        animation: 0.2s PresentButtonActiveAnimate 0s ease-out both; }
+    .present__button--disactive .present__box img {
+      animation: 0.4s PresentButtonDisactiveAnimate 0s ease-out both; }
+  .present__box {
+    display: block;
+    width: 73px;
+    height: 73px;
+    background: linear-gradient(45deg, #292B33, #0C5EED 130%);
+    border-radius: 100%;
+    position: relative; }
+    .present__box img {
+      width: 68px;
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+      transition: 0.2s;
+      animation: 10s PresentButtonAnimate 0s ease-in-out infinite;
+      position: absolute;
+      left: -7px;
+      top: -9px;
+      z-index: 2; }
+  .present__modal {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2; }
+    .present__modal:before {
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: linear-gradient(45deg, #292B33, #0C5EED 130%);
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1; }
+    .present__modal:after {
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-image: url("../images/modal-background.png");
+      background-size: cover;
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2; }
+    .present__modal--active {
+      opacity: 1;
+      visibility: visible; }
+      .present__modal--active .modal__form {
+        display: block; }
+      .present__modal--active .modal__container {
+        transform: translateX(0); }
+    .present__modal__form__active .form {
+      display: block; }
+    .present__modal__container {
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      position: relative;
+      z-index: 3; }
+    .present__modal__wrapper {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      min-height: calc(100% - 48px);
+      margin: 24px 0;
+      padding: 0 24px; }
+    .present__modal__close {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.3s;
+      transform: rotate(0deg);
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1; }
+      .present__modal__close:hover {
+        transform: rotate(180deg); }
+
+@media screen and (max-width: 1350px) {
+  .present {
+    max-width: 100%;
+    top: unset;
+    left: 0;
+    right: unset;
+    bottom: 60px; }
+    .present__button {
+      left: 0; } }
+@media screen and (max-width: 750px) {
+  .present__modal__wrapper {
+    padding: 0 16px; }
+    .present__modal__wrapper .wrapper {
+      padding: 0; } }
+.modal__container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 424px;
+  column-gap: 72px;
+  color: #ffffff;
+  transform: translateX(-64px);
+  transition: 0.5s; }
+.modal h1, .modal .h1 {
+  color: #ffffff; }
+.modal__description {
+  display: block;
+  width: 100%;
+  max-width: 572px;
+  margin-top: 30px; }
+.modal__advantages {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 54px; }
+  .modal__advantages li {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px; }
+  .modal__advantages__icon {
+    display: block;
+    width: 50px; }
+  .modal__advantages__description {
+    flex: 1; }
+.modal__form {
+  display: block;
+  width: 100%;
+  position: relative; }
+  .modal__form .form {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.3s;
+    position: relative; }
+  .modal__form:before {
+    width: 250px;
+    height: 250px;
+    content: '';
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 20px solid #00f225;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
+    transition: 0.3s;
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    top: 0;
+    z-index: 2; }
+  .modal__form:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 138px;
+    margin: 0 auto;
+    border-right: 10px solid #00f225;
+    border-bottom: 10px solid #00F225;
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(45deg) scale(0.5);
+    transition: 0.3s;
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    top: 60px;
+    z-index: 2; }
+  .modal__form--success:before {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1); }
+  .modal__form--success:after {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(45deg) scale(1); }
+  .modal__form--success .form {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5); }
+.modal__input-checkbox label {
+  font-family: Mulish-Medium, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ADB4C6; }
+
+@media screen and (max-width: 1250px) {
+  .modal__advantages {
+    grid-template-columns: 1fr; } }
+@media screen and (max-width: 1000px) {
+  .modal__container {
+    grid-template-columns: 1fr;
+    row-gap: 54px; } }
+@media screen and (max-width: 750px) {
+  .modal__container {
+    row-gap: 24px; }
+  .modal h1, .modal .h1 {
+    padding-right: 40px; }
+  .modal__description {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 20px; }
+  .modal__advantages {
+    margin-top: 16px; }
+    .modal__advantages__icon {
+      width: 40px; }
+      .modal__advantages__icon svg {
+        width: 40px;
+        height: 40px; }
+    .modal__advantages__description {
+      font-size: 14px;
+      line-height: 20px; } }
+.button {
+  font-family: Mulish-Bold, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  min-width: 60px;
+  height: 60px;
+  padding: 0 24px;
+  background: #0C5EED;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s; }
+  .button:hover {
+    background: #0d6fff; }
+
+.form {
+  display: none; }
+  .form__group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    row-gap: 16px; }
+  .form__input label {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #ffffff;
+    transition: 0.2s;
+    position: relative; }
+    .form__input label input {
+      display: block;
+      width: 100%;
+      font-family: Mulish-Medium, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #292B33;
+      height: 58px;
+      padding: 16px 20px 0 20px;
+      background: transparent;
+      border: 0;
+      border-radius: 6px;
+      position: relative;
+      z-index: 1; }
+  .form__input-placeholder {
+    font-family: Mulish-Medium, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #292B33;
+    display: flex;
+    max-width: 100%;
+    padding: 0 20px;
+    transform: translateY(0);
+    transition: 0.2s;
+    user-select: none;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    z-index: 2; }
+    .form__input-placeholder span {
+      color: #FD3C32; }
+  .form__input--active .form__input-placeholder {
+    font-family: Mulish-Medium, sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+    color: #292B33;
+    transform: translateY(-10px); }
+  .form__input--error label {
+    border: 1px solid #FD3C32; }
+  .form__input--error .form__input-placeholder {
+    color: #FD3C32; }
+  .form__checkbox {
+    user-select: none; }
+    .form__checkbox label {
+      font-family: Mulish-Medium, sans-serif;
+      font-size: 13px;
+      line-height: 16px;
+      color: #ffffff;
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer; }
+      .form__checkbox label input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0; }
+      .form__checkbox label .marker {
+        height: 15px;
+        width: 15px;
+        background-color: #ADB4C6;
+        position: absolute;
+        left: 5px;
+        top: 5px; }
+      .form__checkbox label:hover input ~ .marker {
+        background-color: #ADB4C6; }
+      .form__checkbox label input:checked ~ .marker {
+        background-color: #0C5EED; }
+      .form__checkbox label input:disabled ~ .marker {
+        background-color: #0C5EED; }
+      .form__checkbox label input:disabled ~ .form__checkbox-text {
+        color: #ADB4C6; }
+      .form__checkbox label .marker:after {
+        content: "";
+        position: absolute;
+        display: none; }
+      .form__checkbox label input:checked ~ .marker:after {
+        display: block; }
+      .form__checkbox label .marker:after {
+        width: 3px;
+        height: 7px;
+        left: 6px;
+        top: 2px;
+        border-right: 1px solid #ffffff;
+        border-bottom: 1px solid #ffffff;
+        transform: rotate(45deg); }
+  .form__control {
+    display: block;
+    width: 100%;
+    margin-top: 30px; }
+    .form__control button, .form__control .button {
+      width: 100%;
+      max-width: 300px; }
+    .form__control__info {
+      font-family: Mulish-Medium, sans-serif;
+      font-size: 12px;
+      line-height: 20px;
+      color: #ADB4C6;
+      display: none;
+      margin-top: 24px;
+      text-align: center; }
+
+@media screen and (max-width: 750px) {
+  .form__input label {
+    height: 50px; }
+    .form__input label input {
+      height: 48px; }
+  .form__input-placeholder {
+    top: 12px; }
+  .form__input--active .form__input-placeholder {
+    transform: translateY(-6px); }
+  .form__control {
+    margin-top: 24px;
+    margin-bottom: 36px; }
+    .form__control button, .form__control .button {
+      max-width: 100%; }
+    .form__control__info {
+      display: block; } }
+
+/*# sourceMappingURL=app.css.map */
