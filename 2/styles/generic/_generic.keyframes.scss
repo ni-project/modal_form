@@ -1,0 +1,168 @@
+
+// PRESENT ANIMATE
+@-webkit-keyframes PresentButtonShadowAnimate {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  15% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(2);
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1);
+  }
+}
+
+@keyframes PresentButtonShadowAnimate {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  20% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(2);
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1);
+  }
+}
+
+// PRESENT BUTTON ANIMATE
+@-webkit-keyframes PresentButtonAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  19% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(20deg);
+  }
+
+  22% {
+    transform: rotate(-20deg);
+  }
+
+  24% {
+    transform: rotate(20deg);
+  }
+
+  26% {
+    transform: rotate(-20deg);
+  }
+
+  28% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes PresentButtonAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  19% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(20deg);
+  }
+
+  22% {
+    transform: rotate(-20deg);
+  }
+
+  24% {
+    transform: rotate(20deg);
+  }
+
+  26% {
+    transform: rotate(-20deg);
+  }
+
+  28% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+// PRESENT BUTTON ANIMATE
+@-webkit-keyframes PresentButtonActiveAnimate {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(0deg) scale(1.4);
+  }
+}
+
+@keyframes PresentButtonActiveAnimate {
+  from {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg) scale(1);
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(0deg) scale(1.4);
+  }
+}
+
+// PRESENT BUTTON DISACTIVE ANIMATE
+@-webkit-keyframes PresentButtonDisactiveAnimate {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(0deg) scale(1.4);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes PresentButtonDisActiveAnimate {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(0deg) scale(1.4);
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: rotate(0deg) scale(1);
+  }
+}

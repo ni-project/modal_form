@@ -1,0 +1,36 @@
+
+.header {
+  @include full-width(block);
+
+  background: $white;
+  box-shadow: 0 0 24px rgba($primary, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  &__wrapper {
+    @include full-width(flex);
+
+    justify-content: space-between;
+    align-items: center;
+    height: $siteHeaderHeight;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .header {
+    &__wrapper {
+      height: $siteHeaderHeightTablet;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    &__wrapper {
+      height: $siteHeaderHeightMobile;
+    }
+  }
+}

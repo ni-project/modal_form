@@ -1,0 +1,206 @@
+
+.form {
+  $this: &;
+  display: none;
+
+  &__group {
+    @include full-width(flex);
+
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  &__input {
+    label {
+      @include full-width(block);
+
+      height: 60px;
+      background: $white;
+      border-radius: 6px;
+      border: 1px solid $white;
+      transition: 0.2s;
+      position: relative;
+
+      input {
+        @include full-width(block);
+        @include font(16px, 24px, $secondary);
+
+        height: 58px;
+        padding: 16px 20px 0 20px;
+        background: transparent;
+        border: 0;
+        border-radius: 6px;
+        position: relative;
+        z-index: 1;
+      }
+    }
+
+    &-placeholder {
+      @include font(16px, 24px, $secondary);
+
+      display: flex;
+      max-width: 100%;
+      padding: 0 20px;
+      transform: translateY(0);
+      transition: 0.2s;
+      user-select: none;
+      position: absolute;
+      left: 0;
+      top: 18px;
+      z-index: 2;
+
+      span {
+        color: $red;
+      }
+    }
+
+    &--active {
+      #{$this} {
+        &__input {
+          &-placeholder {
+            @include font(12px, 14px, $secondary);
+
+            transform: translateY(-10px);
+          }
+        }
+      }
+    }
+
+    &--error {
+      label {
+        border: 1px solid $red;
+      }
+
+      #{$this} {
+        &__input {
+          &-placeholder {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+
+  &__checkbox {
+    user-select: none;
+
+    label {
+      @include font(13px, 16px, $white);
+
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer;
+
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      .marker {
+        height: 15px;
+        width: 15px;
+        background-color: $disable;
+        position: absolute;
+        left: 5px;
+        top: 5px;
+      }
+
+      &:hover input ~ .marker {
+        background-color: $disable;
+      }
+
+      input:checked ~ .marker {
+        background-color: $blue;
+      }
+
+      input:disabled ~ .marker {
+        background-color: $blue;
+      }
+
+      input:disabled ~ .form__checkbox-text {
+        color: $disable;
+      }
+
+      .marker:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      input:checked ~ .marker:after {
+        display: block;
+      }
+
+      .marker:after {
+        width: 3px;
+        height: 7px;
+        left: 6px;
+        top: 2px;
+        border-right: 1px solid $white;
+        border-bottom: 1px solid $white;
+        transform: rotate(45deg);
+      }
+
+    }
+  }
+
+  &__control {
+    @include full-width(block);
+
+    margin-top: 30px;
+
+    button, .button {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    &__info {
+      @include font(12px, 20px, $disable);
+
+      display: none;
+      margin-top: 24px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .form {
+    &__input {
+      label {
+        height: 50px;
+
+        input {
+          height: 48px;
+        }
+      }
+
+      &-placeholder {
+        top: 12px;
+      }
+
+      &--active {
+        .form__input-placeholder {
+          transform: translateY(-6px);
+        }
+      }
+    }
+
+    &__control {
+      margin-top: 24px;
+      margin-bottom: 36px;
+
+      button, .button {
+        max-width: 100%;
+      }
+
+      &__info {
+        display: block;
+      }
+    }
+  }
+}

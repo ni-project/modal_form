@@ -1,0 +1,178 @@
+
+.modal {
+  &__container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 424px;
+    column-gap: 72px;
+    color: $white;
+    transform: scale(0.8);
+    transition: 0.5s;
+  }
+
+  h1, .h1 {
+    color: $white;
+  }
+
+  &__description {
+    @include full-width(block);
+
+    max-width: 572px;
+    margin-top: 30px;
+  }
+
+  &__advantages {
+    @include full-width(grid);
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 54px;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      column-gap: 20px;
+    }
+
+    &__icon {
+      display: block;
+      width: 50px;
+    }
+
+    &__description {
+      flex: 1;
+    }
+  }
+
+  &__form {
+    @include full-width(block);
+
+    position: relative;
+
+    .form {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+      transition: 0.3s;
+      position: relative;
+    }
+
+    &:before {
+      @include square(250px);
+
+      content: '';
+      display: block;
+      margin: 0 auto;
+      border-radius: 100%;
+      border: 20px solid #00f225;
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.5);
+      transition: 0.3s;
+      position: absolute;
+      left: 1%;
+      right: 1%;
+      top: 0;
+      z-index: 2;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 138px;
+      margin: 0 auto;
+      border-right: 10px solid #00f225;
+      border-bottom: 10px solid #00F225;
+      opacity: 0;
+      visibility: hidden;
+      transform: rotate(45deg) scale(0.5);
+      transition: 0.3s;
+      position: absolute;
+      left: 1%;
+      right: 1%;
+      top: 60px;
+      z-index: 2;
+    }
+
+    &--success {
+      &:before {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+      }
+      &:after {
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(45deg) scale(1);
+      }
+
+      .form {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0.5);
+      }
+    }
+  }
+
+  &__input {
+    &-checkbox {
+      label {
+        @include font(13px, 18px, $disable);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .modal {
+    &__advantages {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .modal {
+    &__container {
+      grid-template-columns: 1fr;
+      row-gap: 54px;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .modal {
+    &__container {
+      row-gap: 24px;
+    }
+
+    h1, .h1 {
+      padding-right: 40px;
+    }
+
+    &__description {
+      margin-top: 16px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    &__advantages {
+      margin-top: 16px;
+
+      &__icon {
+        width: 40px;
+
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      &__description {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
